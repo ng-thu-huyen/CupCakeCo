@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/product-page.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./components/header.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/banner.js"></script>
+    <title>Ngoc Anh & Huyen First Website</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="nav-wrapper">
+        <div class="logo">
+            <a href="#" alt="brand_logo"><img src="./assets/logo.svg"></a>
+        </div>
+        <div class="nav-bar">
+        <ul>
+            <li><a href='./index.html'>Home</a></li>
+            <li><a href='./menu.html'>Our Menu</a></li>
+            <li><a href='./about.html'>About Us</a></li>
+            <li><a href='./sign-up.html'>Sign Up</a></li>
+        </ul>
+        </div>
+      </nav> 
+    <!-- Banner -->
+    <large-banner></large-banner>
+    <!-- Product -->
+    <div class = "product-info">
+        <div class="cake">
+            <img src="./assets/demo-cake.jpeg" alt="cake">
+        </div>
+        <div class="details">
+            <div class = "rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <h1 class="name">Oreo Choco</h1>
+            <p class="price">$3</p>
+            <p class="quantity">Quantity</p>
+            <form class = "quantity-submit">
+                <input type="number" id="quantity-submit" name="quantity-submit" min="1" max="40">
+            </form>
+            <p class="favorite"><i class="fa fa-thumbs-up"></i>Add to favorite</p>
+            <button type="button" class="add-to-cart" style ="background-color: rgba(160, 19, 38, 0.97); border: none; color: #FFFFFF;">Add to cart</button>
+            <div class = "description">
+                <p>Belgian white & dark Callebaut chocolate cupcake topped with Oreo crumble-infused buttercream frosting & cookie pieces.</p>
+                <p>You can even eat the cupcake wrapper as it is made of delicious chocolate! Made using the finest ingredients by our bake experts in store, we hand-craft every element to perfection.</p>
+                <p>Approximate dimensions:</p>
+                <table style="width:70%">
+                    <tr>
+                    <td>Diameter</td>
+                    <td>15 cm</td>
+                    </tr>
+                    <tr>
+                    <td>Height</td>
+                    <td>21 cm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- PAGE FOOTER -->
+    <main-footer></main-footer>
+</body>
+</html>

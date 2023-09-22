@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <script src="./components/header.js"></script>
+    <script src="./components/slider.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/banner.js"></script>
+    <title>Ngoc Anh & Huyen First Website</title>
+</head>
+<body>
+  <!-- Navigation bar -->
+    <nav class="nav-wrapper">
+      <div class="logo">
+          <a href="#" alt="brand_logo"><img src="./assets/logo.svg"></a>
+      </div>
+      <div class="nav-bar">
+      <ul>
+          <li><a href='./index.html'>Home</a></li>
+          <li><a href='./menu.html'>Our Menu</a></li>
+          <li><a href='./about.html'>About Us</a></li>
+          <li><a href='./sign-up.html'>Sign Up</a></li>
+      </ul>
+      </div>
+    </nav> 
+  <!-- Banner -->
+  <large-banner></large-banner>
+  <web-slider></web-slider>
+  <!-- First description block: INTRO -->
+  <article class="intro">
+    <h1>House of artisan cupcakes</h1>
+    <p>The Classic Cupcake Company has been in service of gourmet cupcakes and confectioneries since 2010.
+      We are striving to expand our range of products from cupcakes to birthday cakes, cake pops and many other delicious treats for every needs.
+      The mission of our team isn’t just to provide you with heavenly cupcakes that tantalize the senses, but to also create an experience. Warm-hearted people, great atmosphere, and all the baked goods will whisk you back to a place, flooded with memories, of waking up on Christmas with the smell of baking in the air, or your mom’s ‘secret recipe.’
+    </p>
+    <button class="read-more" onclick="window.location.href='./about.html'">Read more</button>
+  </article>
+  <!-- Second Block: BEST SELLERS -->
+  <article class = 'products'>
+    <h1>Our Bestsellers</h1>
+    <ul class="product-cards">
+      <li class="item">
+        <img class="product-img" src='./assets/cake1.jpeg' alt="Cupcake 1">
+        <div class="description-wrapper">
+          <p class="product-name">Product 1 <img class='cart-sym' src="assets/cart.svg" alt="Add to cart"></p>
+          <p class="card-price">$3</p>
+        </div>
+      </li>
+      <li class="item">
+        <img class="product-img" src='./assets/cake2.jpeg' alt="Cupcake 2">
+        <p class="product-name">Product 2 <img class='cart-sym' src="assets/cart.svg" alt="Add to cart"> </p>
+        <p class="card-price">$3</p>
+      </li>
+      <li class="item">
+        <img class="product-img" src="./assets/cake3.jpeg" alt="Cupcake 3">
+        <p class="product-name">Product 3 <img class='cart-sym' src="assets/cart.svg" alt="Add to cart"> </p>
+        <p class="card-price">$3</p>
+      </li>
+      <li class="item">
+        <img class="product-img" src="./assets/cake4.jpeg" alt="Cupcake 4">
+        <p class="product-name">Product 4 <img class='cart-sym' src="assets/cart.svg" alt="Add to cart"> </p>
+        <p class="card-price">$3</p>
+      </li>
+      <!-- <li class="item">
+        <img class="product-img" src="./assets/cake5.jpeg" alt="Cupcake 5">
+        <p class="product-name">Product 5<img class='cart-sym' src="assets/cart.svg" alt="Add to cart"> </p>
+        <p class="card-price">$3</p>
+      </li> -->
+    </ul>
+  </article>
+  <!-- Additional Banner -->
+  <div class="additional-para">
+    <div class="side-text-wrapper">
+      <h1>Order Online Today!</h1>
+      <p>Our ordering process is simple and easy with a variety of options to make it easier for you to place your order, whether it be online, via email, over the phone or visiting us in person, we would be very happy to assist you. 
+        We have something to suit every occasion! </p>
+    </div>
+    <img src = 'assets/illu1.jpeg' alt="illustration">
+  </div>
+  <!-- TESTIMONIALS -->
+  <div class="testimonials">
+    <h1>Hear from our customers</h1>
+    <table class="reviews-script" style="width:100%">
+      <colgroup>
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+      </colgroup>
+      <tr>
+        <th><p>“My go-to cupcake in town. <br> Best quality. <br> Loyal customer for 2+ years.” </p> 
+        <p>— A. B. , Trip Advisor</p></th> 
+        <th><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur velit odio neque placerat cursus ut vitae mauris eu.”  </p>
+        <p>— C. D, Klook</p></th>
+        <th><p>“Best place to enjoy tasty dessert with my family” </p>
+        <p>— P. M, Klook</p></th>
+      </tr>
+    </table>
+  </div>
+  <!-- PAGE FOOTER -->
+  <main-footer></main-footer>
+</body>
+</html>
